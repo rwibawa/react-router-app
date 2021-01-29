@@ -7,6 +7,8 @@ import {
   Link
 } from 'react-router-dom';
 
+import Topics from 'components/Topics';
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +25,9 @@ function App() {
               <li>
                 <Link to="/users">Users</Link>
               </li>
+              <li>
+                <Link to="/topics">Topics</Link>
+              </li>
             </ul>
           </nav>
 
@@ -34,6 +39,9 @@ function App() {
             </Route>
             <Route path="/users">
               <Users />
+            </Route>
+            <Route path="/topics">
+              <Topics />
             </Route>
             <Route path="/">
               <Home />

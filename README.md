@@ -9,3 +9,16 @@ $ yarn start
 
 $ yarn add react-router-dom
 ```
+
+### 1.1. Absolute Imports
+`jsconfig.json`
+```json
+{
+    "compilerOptions": {
+        "baseUrl": "src"
+    },
+    "include": [
+        "src"
+    ]
+}
+```
