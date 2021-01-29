@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
-    Link,
+    NavLink,
     useRouteMatch,
     useParams
   } from 'react-router-dom';
@@ -17,12 +16,12 @@ function Topics() {
 
             <ul>
                 <li>
-                    <Link to={`${match.url}/components`}>Components</Link>
+                    <NavLink to={`${match.url}/components`}>Components</NavLink>
                 </li>
                 <li>
-                    <Link to={`${match.url}/props-v-state`}>
+                    <NavLink to={`${match.url}/props-v-state`}>
                         Props v. State
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
 
